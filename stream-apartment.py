@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 
 #Configration Page
-st.set_page_config("Apartment Price Prediction",page_icon=':building:',layout='wide')
+st.set_page_config("Apartment Price Prediction",layout='wide')
 style = "<style>h2 {text-align: center};color=Red"
 st.markdown(style,unsafe_allow_html=True)
 
