@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 
 #Configration Page
-st.set_page_config("Customer Churn Prediction",page_icon=':information_desk_person:',layout='wide')
+st.set_page_config("Apartment Price Prediction",page_icon=':building:',layout='wide')
 style = "<style>h2 {text-align: center};color=Red"
 st.markdown(style,unsafe_allow_html=True)
 
@@ -48,20 +48,14 @@ tabs1.subheader('Overview')
 tabs1.write("""
 Apartment Price Prediction app helps businesss to calculate price of apartment that is located in Daegu, South Korea""")
 tabs1.write("""
-Why are Apartmen Price Apps So Important?
+Why are Apartment Price Prediction Apps So Important?
 
 1. When we calculated manually about apartment price, it can spend a lot of time and accuracy of price can deviate greatly
 2. This app will help to estimate cost of aparment rent fast based on the some features provided
 """)
-tabs1.write("""
-What do Customer Churn Apps Do?
 
-1. Track user behavior and engagement metrics to identify users who are disengaging.
-2. Analyze user data to pinpoint potential causes of churn, like how long a customer has been with us and their contract type.
-3. May enable targeted interventions to win back at-risk users, like personalized messages or exclusive offers.
-""")
 tabs1.write("""
-Benefits of Customer Churn Apps
+Benefits of Apartment Price Prediction Apps
 
 1. Determine the right price, which means the price is not too expensive and not too cheap
 2. Efficiency of time
@@ -137,20 +131,3 @@ if st.session_state['submited']:
         result_container.success(f'Predicted Price: ${prediction[0]:,.2f}')
         right_panel.balloons()
         btn_predict_again = btn_placeholder.button('Predict Again',use_container_width=True,on_click=cancel_button)
-# if st.button('Predict Price'):
-#     data = {
-#     'HallwayType' : hallway_type,
-#     'TimeToSubway' : time_to_subway,
-#     'SubwayStation' : subway_station,
-#     'N_FacilitiesNearBy(ETC)' : num_facilities_nearby,
-#     'N_FacilitiesNearBy(PublicOffice)' : num_facilites_nearby_publicoffice,
-#     'N_SchoolNearBy(University)' : num_school_nearby,
-#     'N_Parkinglot(Basement)' : num_parkinglot,
-#     'YearBuilt' : year_built,
-#     'N_FacilitiesInApt' : num_facilities_apartment,
-#     'Size(sqf)' : size }
-#     data = pd.DataFrame(data, index=[1])
-    
-#     st.write(f'Predicted Price: ${prediction[0]:,.2f}')
-
-#     btn_predict_again = btn_placeholder.button('Predict Again',use_container_width=True,on_click=cancel_button)
