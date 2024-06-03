@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+import sklearn
 
 #Configration Page
 st.set_page_config("Apartment Price Prediction",layout='wide')
