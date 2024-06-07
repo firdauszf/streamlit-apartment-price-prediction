@@ -128,6 +128,6 @@ if st.session_state['submited']:
         'Size(sqf)' : size }
         data = pd.DataFrame(data, index=[1])
         prediction = predict(data)
-        result_container.success(f'Predicted Price: ${prediction[0]:,.2f}')
+        result_container.success(f'Predicted Price: {prediction[0]:,.2f} Won')
         right_panel.balloons()
         btn_predict_again = btn_placeholder.button('Predict Again',use_container_width=True,on_click=cancel_button)
